@@ -52,24 +52,7 @@ Create Apache config file:
 ```bash
 sudo vim /etc/apache2/sites-available/nextcloud.conf
 ```
-
-Paste the following configuration:
-```apacheconf
-<VirtualHost *:80>
-    ServerAdmin you@example.com
-    DocumentRoot /var/www/nextcloud
-    ServerName yourdomain.com
-
-    <Directory /var/www/nextcloud/>
-        Require all granted
-        AllowOverride All
-        Options FollowSymLinks MultiViews
-    </Directory>
-
-    ErrorLog ${APACHE_LOG_DIR}/nextcloud_error.log
-    CustomLog ${APACHE_LOG_DIR}/nextcloud_access.log combined
-</VirtualHost>
-```
+Follow the script which is in config file.
 
 Enable the site and restart Apache:
 ```bash
